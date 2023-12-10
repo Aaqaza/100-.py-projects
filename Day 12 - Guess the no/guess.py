@@ -1,21 +1,19 @@
 import random
-from art import logo
 
-print(logo)
 print("Welcome to the number guessing game!\nI'm thinking of a number from 1 to 100")
 level = input("Choose a difficulty level. Type easy or hard : ")
 
 def compare(guess, attempt):
   """Compares the guess and the no chosen by the computer"""
-  if attempt == 1:
-    print("You ran out of guesses! Better luck next time!")
-  elif guess > no:
+  if guess > no:
     print("Too high")
   elif guess < no:
     print("Too low")
   elif guess == no:
    print(f"You got it! The answer was {guess}")
-   exit()
+  if (attempt) == 1:
+    print("You ran out of guesses! Better luck next time!")
+  return
 
 def make_a_guess(attempt):
   """Prints and accepts the guesses"""""
