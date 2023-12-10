@@ -7,21 +7,21 @@ level = input("Choose a difficulty level. Type easy or hard : ")
 
 def compare(guess, attempt):
   """Compares the guess and the no chosen by the computer"""
-  if int(guess) > no:
+  if guess > no:
     print("Too high")
-  elif int(guess) < no:
+  elif guess < no:
     print("Too low")
-  elif int(guess) == no:
+  elif guess == no:
    print(f"You got it! The answer was {guess}")
    exit()
   elif attempt == 0:
     print("You ran out of guesses! Better luck next time!")
 
 def make_a_guess(attempt):
-  """Keeps track of attempt and prints the guesses"""""
+  """Prints and accepts the guesses"""""
   while(attempt > 0):
     print(f"You have {attempt} attempts remaining to guess the no")
-    guess = input("Make a guess: ")
+    guess = int(input("Make a guess: "))
     return guess
 
 no = random.randint(1,100)
