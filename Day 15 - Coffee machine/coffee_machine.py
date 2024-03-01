@@ -74,7 +74,7 @@ is_on = True
 while is_on:
     choice = input("\nWhat would you like? (espresso/latte/cappuccino):")
     if choice == "off":
-        exit()
+        is_on = False
     elif choice == "report":
         print(f"Water : {resources['water']} ml")
         print(f"Milk : {resources['milk']} ml")
