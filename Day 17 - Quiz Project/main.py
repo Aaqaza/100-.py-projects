@@ -16,5 +16,6 @@ quiz = QuizBrain(question_bank)
 while quiz.still_has_questions():
     quiz.next_question()
 
-print("You've completed the quiz")
-print(f"You're final score was : {quiz.score}/{quiz.question_number}")
+print("You've completed the quiz. You're final score was : {quiz.score}/{quiz.question_number}")
+# OR
+# print(f"You've complete the quiz. Your final score was {quiz.final_score}")
