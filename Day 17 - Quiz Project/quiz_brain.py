@@ -23,6 +23,10 @@ class QuizBrain:
             # go_on = False
         print(f"The correct answer was {correct_answer}.")
         print(f"Your current score is : {self.score}/{self.question_number}\n")
+        # OR
+        #self.final_score = f"{self.score}/{self.question_number}"
+        #print(f"Your current score is: {self.final_score}.\n")
+
         #
         # if not go_on:
         #     exit()
