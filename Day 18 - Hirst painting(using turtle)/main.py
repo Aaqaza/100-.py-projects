@@ -1,4 +1,5 @@
 """To extract colors from an image into a color_list list, use one of the below 2 codes"""
+import turtle
 
 # import colorgram as cg
 #
