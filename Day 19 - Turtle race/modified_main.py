@@ -8,10 +8,8 @@ user_names = []
 no_of_users = screen.numinput(title="No of users", prompt="Enter no of players: ")
 
 for n in range(int(no_of_users)):
-    user_name = screen.textinput(title="Enter player name", prompt="What is your name?")
-    user_names.append(user_name)
-    user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
-    user_bets.append(user_bet)
+    user_names.append(screen.textinput(title="Enter player name", prompt="What is your name?"))
+    user_bets.append(screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: "))
 
 colors = ["violet", "indigo", "blue", "green", "yellow", "orange", "red"]
 all_turtles = []
