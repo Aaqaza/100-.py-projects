@@ -24,6 +24,8 @@ while len(guessed_states) < 50:
                     data.write(state + "\n")
         break
 
+    # OR
+    #
     # if answer_state == "Exit":
     #     missing_states = []
     #     for state in all_states:
