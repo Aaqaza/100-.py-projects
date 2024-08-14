@@ -11,7 +11,7 @@ data = pandas.read_csv("50_states.csv")
 all_states = data["state"].to_list()
 guessed_states = []
 
-# Run the game until all states are guessed
+# Ask the user to enter a state until all states are guessed
 while len(guessed_states) < 50:
     answer_state = screen.textinput(title=f"{len(guessed_states)}/50 states correct",
                                     prompt="What's another state's name?").title()
