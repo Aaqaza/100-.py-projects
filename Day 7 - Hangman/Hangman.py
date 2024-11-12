@@ -10,9 +10,6 @@ lives = 6
 
 print(logo)
 
-#Testing code
-# print(f'Pssst, the solution is {chosen_word}.')
-
 display = []
 for _ in range(word_length):
     display += "_"
